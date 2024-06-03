@@ -10,5 +10,11 @@ solc_version = "0.8.15"
 [fuzz]
 runs = 12
 
+[rpc_endpoints]
+baseTestRPC = 'https://sepolia.base.org'
+baseMainnetRPC = 'https://mainnet.base.org'
+[etherscan]
+baseTest = { key = "IGGE24T4IZQ3IQKJSGEQH2833P9YTPJJNX",chain=84532 }
+
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config

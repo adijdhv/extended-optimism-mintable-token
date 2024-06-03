@@ -39,7 +39,7 @@ coverage:
 
 .PHONY: deploy
 deploy:
-	@forge script --sender $(DEPLOYER) --broadcast --rpc-url $(L2_RPC_URL) DeployExtendedOptimismMintableToken
+	forge script --private-key PRIVATE_KEYS --broadcast --rpc-url https://mainnet.base.org --verify --etherscan-api-key baseMainnetRPC DeployExtendedOptimismMintableToken
 
 .PHONY: deploy-local
 deploy-local:
